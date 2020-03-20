@@ -1,5 +1,5 @@
 /rollup/
 node_modules/
-lib/
+# lib/
 .bic_cache
 *.log
