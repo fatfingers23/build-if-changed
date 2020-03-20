@@ -1,6 +1,6 @@
 {
   "name": "build-if-changed",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "description": "Run build scripts only when files changed",
   "license": "MIT",
   "main": "lib/index.js",
@@ -20,7 +20,7 @@
   "dependencies": {
     "ansi-256-colors": "^1.1.0",
     "has-flag": "^4.0.0",
-    "recrawl": "^1.1.1",
+    "recrawl": "^2.0.0",
     "saxon": "^0.1.15"
   },
   "husky": {

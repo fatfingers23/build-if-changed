@@ -41,7 +41,8 @@ export class GitIgnore {
           }
         } else if (fs.isFile(path)) {
           const lines = readLines(path).filter(line => line && line[0] !== '#')
-          match = createMatcher(lines, glob => join(dir, glob))
+          //TODO DO not think this is correct. Will need to come back and test
+          match = createMatcher(lines)
           this.globTree[pathId] = match || false
           if (match && match(file, name)) {
             return true

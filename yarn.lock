@@ -542,10 +542,10 @@ read-pkg@^5.1.1:
     parse-json "^4.0.0"
     type-fest "^0.4.1"
 
-recrawl@^1.1.1:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/recrawl/-/recrawl-1.2.0.tgz#f17d058f638856270676770f15c0e2dc3d6ed1dd"
-  integrity sha512-Fyi2mKpsThA2dH82YSp8Lv8AJJ8khUtFVPcRZ0u4fSrMdwljQ7RuPSVH6n2zdPQNWK7H12yysCqKY+sTpuhV+g==
+recrawl@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/recrawl/-/recrawl-2.0.0.tgz#bb2e4d5424435d2a2ac15a61a84f21510d087fec"
+  integrity sha512-PmL1uxEDduB/qqWc06KZzGJ4j//sXAuMlTcNJFFAEMTffJIFrzFghOxkgHU8+auKOUILEdbyfuEvFyoeu4mJgQ==
   dependencies:
     "@cush/relative" "^0.1.0"
     glob-regex "^0.3.0"

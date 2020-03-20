@@ -62,6 +62,7 @@ export const loadPackages = (
         log.warn('Package path must be absolute:\n  %O', pkg)
         return
       }
+
       if (basename(pkg) === PKG_JSON) {
         pkg = dirname(pkg)
       }
@@ -139,6 +140,7 @@ export const getChanged = (packages: PackageJson[], opts: Options) => {
     }
     if (Array.isArray(config)) {
       config = { only: config }
+      console.log(config)
     }
 
     // Bail when the "build" script is empty or it executes
@@ -160,7 +162,7 @@ export const getChanged = (packages: PackageJson[], opts: Options) => {
       enter: filter && (dir => filter(dir)),
       filter,
     })
-
+    console.log(files)
     const cachePath = join(pkg.root, CACHE_NAME)
     const cache: Cache = fs.isFile(cachePath) ? fs.readJson(cachePath) : {}
 
